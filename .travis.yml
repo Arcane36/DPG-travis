@@ -11,7 +11,7 @@ script:
   - coverage run hello.py
 
 after_success:
-  COVERALLS_REPO_TOKEN=943zSqqmU32I0ChWmMwielfGhcWnsp0rU coverall
+  COVERALLS_REPO_TOKEN=943zSqqmU32I0ChWmMwielfGhcWnsp0rU coveralls
 
 notifications:
   email: false
