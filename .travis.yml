@@ -8,5 +8,4 @@ script:
   - python hello.py
 
 notifications:
-  slack:
-    on_success: never
+  email: false
