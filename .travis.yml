@@ -4,8 +4,14 @@ python:
   - "2.7"
   - "3.5"
   
+install:
+  - pip install coveralls
+  
 script:
-  - python hello.py
+  - coverage run hello.py
+
+after_success:
+  COVERALLS_REPO_TOKEN=943zSqqmU32I0ChWmMwielfGhcWnsp0rU coverall
 
 notifications:
   email: false
